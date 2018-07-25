@@ -23,6 +23,28 @@ module.exports = {
                         presets: ["babel-preset-env", "babel-preset-react"]
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+            },
+            {
+                test: /\.(ttf|eot|woff|woff2|svg)$/,
+                use: {
+                  loader: "file-loader",
+                  options: {
+                    name: "fonts/[name].[ext]",
+                  }
+                }
+            },
+            {
+                test: /\.(jpg|png|gif)$/,
+                use: {
+                  loader: "file-loader",
+                  options: {
+                    name: "images/[name].[ext]",
+                  }
+                }
             }
         ]
     }   
