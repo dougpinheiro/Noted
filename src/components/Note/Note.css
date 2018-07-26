@@ -1,0 +1,12 @@
+.Note{
+    width: 100%;
+}
+.ui-widget{
+    font-size: 20px !important;
+}
+.Bar{
+    display: flow-root;
+}
+.ui-tree{
+    height: 100% !important;
+}

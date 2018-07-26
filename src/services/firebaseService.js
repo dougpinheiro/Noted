@@ -10,16 +10,18 @@ const config = {
     messagingSenderId: "204244509554"
 };
 
-firebase.initializeApp(config);
+export const firebaseApp = firebase.initializeApp(config);
 
-export const login = (email, senha) => {
+export const authentication = firebase.auth();
+
+/* export const login = (email, senha) => {
     let result = false;
-    firebase.auth().signInWithEmailAndPassword(email, doEncrypt(senha)).then(res=>{
-        console.log(res.user)
+    app.auth.signInWithEmailAndPassword(email, doEncrypt(senha)).then(res=>{
+        console.log(res)
         result = true;
     }).catch(err=>{
         console.log(err)
     });
     console.log("Executando login de ", email, " com a senha ", doEncrypt(senha))
     return result;
-};
+}; */

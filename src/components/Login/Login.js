@@ -2,41 +2,40 @@ import React, { Component } from 'react';
 import {InputText} from 'primereact/inputtext';
 import {Password} from 'primereact/password';
 import {Button} from 'primereact/button';
-
+import {authentication} from '../../services/firebaseService'
 import './Login.css';
-
-import {login} from '../../services/firebaseService'
+import {doEncrypt} from '../../utils/securityUtils'
 
 export default class Login extends Component {
 
     constructor(props){
-        super(props)
+        super(props);
+       
         this.state = {
             email: '',
             senha: '',
-            logged: false
+            visibility : {"display":"block"}
         }
-        this.handleEntrar = this.handleEntrar.bind(this);
+
+        this.handleLogin = this.handleLogin.bind(this);
     }
 
-    handleEntrar(){
-        if(login(this.state.email, this.state.senha)){
-            this.setState({...this.state, logged:true})
-        }
+    handleLogin(){
+        authentication.signInWithEmailAndPassword(this.state.email, doEncrypt(this.state.senha)).then(res=>{
+            this.setState({
+                ...this.state,
+                visibility : {"display" : "none"}
+            }); 
+            this.props.handleLogin();
+        }).catch(err => {
+            console.log(err);
+        });
     }
 
     render() {
 
-        let loginVisible = 'block';
-
-        if(this.state.logged === true){
-            loginVisible = 'none';
-        }else{
-            loginVisible = 'block';
-        }
-
         return (
-            <div className="Login" style={{"display" : loginVisible}}>
+            <div className="Login" style={this.state.visibility}>
                 <span className="ui-float-label" style={{"margin":"20px"}}>
                     <InputText id="email" type="email" value={this.state.email} onChange={(e) => this.setState({email: e.target.value})} style={{"width":"100%"}} />
                     <label htmlFor="email">Email</label>
@@ -46,7 +45,7 @@ export default class Login extends Component {
                     <label htmlFor="senha">Senha</label>
                 </span>
                 <span className="ui-float-label"  style={{"margin":"20px"}}>
-                    <Button label="Entrar" onClick={this.handleEntrar} style={{"width":"100%", "padding": "8px"}}/>
+                    <Button label="Entrar" onClick={this.handleLogin} style={{"width":"100%", "padding": "8px"}}/>
                 </span>
             </div>
         )

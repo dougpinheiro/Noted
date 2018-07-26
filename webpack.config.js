@@ -8,6 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundler.js'
     },
+    devtool: 'cheap-module-source-map',
     devServer: {
         port: 3000,
         contentBase: path.join(__dirname, 'public'),
