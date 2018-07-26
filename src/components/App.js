@@ -24,8 +24,9 @@ export default class App extends Component {
   render(){
     return (
       <div className="App"> 
-        <Login handleLogin={this.handleLogin}/>
-        <Main mainVisibility={this.state.mainVisibility}/>
+        {/* <Login handleLogin={this.handleLogin}/> */}
+        {/* <Main mainVisibility={this.state.mainVisibility}/> */}
+        <Main mainVisibility={{"display" : "block"}}/>
       </div>
     )
   }
