@@ -8,7 +8,7 @@ class TaskTree extends Component {
                 <form className="FrmTree">
                     <div className="TopInput">
                         <input id="itTask" type="text" />
-                        <input type="submit" />
+                        <input id="btnAdd" type="submit" />
                     </div>
                 </form>
                 <div className="MainTree">

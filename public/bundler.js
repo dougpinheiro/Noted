@@ -45018,7 +45018,11 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
+<<<<<<< Updated upstream
 exports.push([module.i, ".Note{\r\n    width: 100%;\r\n    display: flex;\r\n}\r\n.ui-widget{\r\n    font-size: 20px !important;\r\n}\r\n.Bar{\r\n    display: flex;\r\n}\r\n.ui-tree{\r\n    height: 100% !important;\r\n}", ""]);
+=======
+exports.push([module.i, ".Note{\r\n    width: 100%;\r\n}\r\n.ui-widget{\r\n    font-size: 20px !important;\r\n}\r\n.Bar{\r\n    display: flow-root;\r\n}\r\n.ui-tree{\r\n    height: 100% !important;\r\n}", ""]);
+>>>>>>> Stashed changes
 
 // exports
 
@@ -70097,6 +70101,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Main = function (_Component) {
     _inherits(Main, _Component);
 
+<<<<<<< Updated upstream
     function Main() {
         _classCallCheck(this, Main);
 
@@ -70104,6 +70109,70 @@ var Main = function (_Component) {
     }
 
     _createClass(Main, [{
+=======
+    function Main(props) {
+        _classCallCheck(this, Main);
+
+        var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+
+        _this.state = {
+            visibility: { "display": "none" },
+            data: _this.generateData()
+        };
+        _this.generateData = _this.generateData.bind(_this);
+        return _this;
+    }
+
+    _createClass(Main, [{
+        key: 'generateData',
+        value: function generateData() {
+            return [{
+                "label": "Documents",
+                "data": "Documents Folder",
+                "expandedIcon": "fa fa-fw fa-folder-open",
+                "collapsedIcon": "fa fa-fw fa-folder",
+                "children": [{
+                    "label": "Work",
+                    "data": "Work Folder",
+                    "expandedIcon": "fa fa-fw fa-folder-open",
+                    "collapsedIcon": "fa fa-fw fa-folder",
+                    "children": [{ "label": "Expenses.doc", "icon": "fa fa-fw fa-file-word-o", "data": "Expenses Document" }, { "label": "Resume.doc", "icon": "fa fa-fw fa-file-word-o", "data": "Resume Document" }]
+                }, {
+                    "label": "Home",
+                    "data": "Home Folder",
+                    "expandedIcon": "fa fa-fw fa-folder-open",
+                    "collapsedIcon": "fa fa-fw fa-folder",
+                    "children": [{ "label": "Invoices.txt", "icon": "fa fa-fw fa-file-word-o", "data": "Invoices for this month" }]
+                }]
+            }, {
+                "label": "Pictures",
+                "data": "Pictures Folder",
+                "expandedIcon": "fa fa-fw fa-folder-open",
+                "collapsedIcon": "fa fa-fw fa-folder",
+                "children": [{ "label": "barcelona.jpg", "icon": "fa fa-fw fa-file-image-o", "data": "Barcelona Photo" }, { "label": "logo.jpg", "icon": "fa fa-fw fa-file-image-o", "data": "PrimeFaces Logo" }, { "label": "primeui.png", "icon": "fa fa-fw fa-file-image-o", "data": "PrimeUI Logo" }]
+            }, {
+                "label": "Movies",
+                "data": "Movies Folder",
+                "expandedIcon": "fa fa-fw fa-folder-open",
+                "collapsedIcon": "fa fa-fw fa-folder",
+                "children": [{
+                    "label": "Al Pacino",
+                    "data": "Pacino Movies",
+                    "children": [{ "label": "Scarface", "icon": "fa fa-fw fa-file-video-o", "data": "Scarface Movie" }, { "label": "Serpico", "icon": "fa fa-fw fa-file-video-o", "data": "Serpico Movie" }]
+                }, {
+                    "label": "Robert De Niro",
+                    "data": "De Niro Movies",
+                    "children": [{ "label": "Goodfellas", "icon": "fa fa-fw fa-file-video-o", "data": "Goodfellas Movie" }, { "label": "Untouchables", "icon": "fa fa-fw fa-file-video-o", "data": "Untouchables Movie" }]
+                }]
+            }];
+        }
+    }, {
+        key: 'handleLogin',
+        value: function handleLogin() {
+            console.log('main doing login');
+        }
+    }, {
+>>>>>>> Stashed changes
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -70257,6 +70326,7 @@ var Note = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'Note' },
+<<<<<<< Updated upstream
                 _react2.default.createElement(
                     'div',
                     { className: 'topInput', style: { "display": "inline-flex", "margin": "6px 0px 8px 0px" } },
@@ -70268,6 +70338,15 @@ var Note = function (_Component) {
                     }),
                     _react2.default.createElement(_button.Button, { icon: 'pi pi-plus', onClick: this.increment })
                 ),
+=======
+                _react2.default.createElement(_inputtext.InputText, { value: this.state.input,
+                    onChange: function onChange(e) {
+                        return _this2.setState({ value: e.target.value });
+                    },
+                    style: inputStyle
+                }),
+                _react2.default.createElement(_button.Button, { icon: 'pi pi-plus', onClick: this.increment }),
+>>>>>>> Stashed changes
                 _react2.default.createElement(
                     'div',
                     { className: 'Bar' },

@@ -9,8 +9,18 @@
 
 .TopInput{
     min-width: 300px;
-    padding: 10px;
+    max-width: 600px;
+    padding: 43px 20px 43px 20px;
     background: green;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#itTask{
+    height: 34px;
+    width: 100%;
 }
 
 .MainTree{
@@ -21,4 +31,10 @@
 
 .FrmTree{
     width: 100%;
+}
+
+#btnAdd{
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
 }
