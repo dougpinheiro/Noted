@@ -1,16 +1,18 @@
 import {doEncrypt} from '../utils/securityUtils'
 import firebase from 'firebase'
+import readEnv from 'read-env'
 
-const config = {
-    apiKey: "AIzaSyDqH3GOOJ5rDg4LEW5v18LDYU4JmibCPzQ",
-    authDomain: "noted-39534.firebaseapp.com",
-    databaseURL: "https://noted-39534.firebaseio.com",
-    projectId: "noted-39534",
-    storageBucket: "noted-39534.appspot.com",
-    messagingSenderId: "204244509554"
+
+const conf = {
+    apiKey: readEnv("firebase_apiKey"),
+    authDomain: readEnv("firebase_authDomain"),
+    databaseURL: readEnv("firebase_databaseURL"),
+    projectId: readEnv("firebase_projectId"),
+    storageBucket: readEnv("firebase_storageBucket"),
+    messagingSenderId: readEnv("firebase_messagingSenderId")
 };
 
-export const firebaseApp = firebase.initializeApp(config);
+export const firebaseApp = firebase.initializeApp(conf);
 
 export const authentication = firebase.auth();
 

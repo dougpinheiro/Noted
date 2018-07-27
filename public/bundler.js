@@ -44961,7 +44961,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "html, body, #root, .App{\r\n    margin: 0;\r\n    padding: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n}", ""]);
+exports.push([module.i, "html, body, #root, .App{\r\n    margin: 0;\r\n    padding: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n}", ""]);
 
 // exports
 
@@ -44999,7 +44999,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".Main{\r\n    display: block;\r\n    padding: 5px;\r\n    max-width: 320px;\r\n    /* max-height: 320px; */\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    margin: auto;\r\n}", ""]);
+exports.push([module.i, ".Main{\r\n    display: block;\r\n    /* max-height: 320px; */\r\n    width: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    margin: auto;\r\n}", ""]);
 
 // exports
 
@@ -45018,11 +45018,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-<<<<<<< Updated upstream
-exports.push([module.i, ".Note{\r\n    width: 100%;\r\n    display: flex;\r\n}\r\n.ui-widget{\r\n    font-size: 20px !important;\r\n}\r\n.Bar{\r\n    display: flex;\r\n}\r\n.ui-tree{\r\n    height: 100% !important;\r\n}", ""]);
-=======
-exports.push([module.i, ".Note{\r\n    width: 100%;\r\n}\r\n.ui-widget{\r\n    font-size: 20px !important;\r\n}\r\n.Bar{\r\n    display: flow-root;\r\n}\r\n.ui-tree{\r\n    height: 100% !important;\r\n}", ""]);
->>>>>>> Stashed changes
+exports.push([module.i, ".Note{\r\n    width: 100%;\r\n    height: 100%;\r\n    min-width: 320px;\r\n    display: flex;\r\n}\r\n.ui-widget{\r\n    font-size: 20px !important;\r\n}\r\n.Bar{\r\n    display: flex;\r\n}\r\n.ui-tree{\r\n    height: 100% !important;\r\n    width: 100% !important;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./src/components/TaskTree/TaskTree.css":
+/*!************************************************************************!*\
+  !*** ./node_modules/css-loader!./src/components/TaskTree/TaskTree.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".TaskTree{\r\n    background: red;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0px;\r\n    bottom: 0px;\r\n    right: 0px;\r\n}\r\n\r\n.TopInput{\r\n    min-width: 300px;\r\n    max-width: 600px;\r\n    padding: 43px 20px 43px 20px;\r\n    background: green;\r\n    display: flex;\r\n    left: 0;\r\n    right: 0;\r\n    margin: auto;\r\n}\r\n\r\n#itTask{\r\n    height: 34px;\r\n    width: 100%;\r\n}\r\n\r\n.MainTree{\r\n    border: 1px dashed blue;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.FrmTree{\r\n    width: 100%;\r\n}\r\n\r\n#btnAdd{\r\n    margin-left: 20px;\r\n    width: 100px;\r\n    height: 40px;\r\n}", ""]);
 
 // exports
 
@@ -45140,6 +45155,180 @@ module.exports = function escape(url) {
     return url
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/env/index.js":
+/*!***********************************!*\
+  !*** ./node_modules/env/index.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * env
+ * Copyright(c) 2011 Daniel D. Shaw <dshaw@dshaw.com>
+ * MIT Licensed
+ */
+
+/**
+ * env
+ */
+
+exports = module.exports = __webpack_require__(/*! ./lib/env.js */ "./node_modules/env/lib/env.js");
+
+/**
+ * Version
+ */
+
+exports.version = __webpack_require__(/*! ./package.json */ "./node_modules/env/package.json").version;
+
+
+/***/ }),
+
+/***/ "./node_modules/env/lib sync recursive":
+/*!***********************************!*\
+  !*** ./node_modules/env/lib sync ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = "./node_modules/env/lib sync recursive";
+
+/***/ }),
+
+/***/ "./node_modules/env/lib/env.js":
+/*!*************************************!*\
+  !*** ./node_modules/env/lib/env.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/*!
+ * env
+ * Copyright(c) 2011 Daniel D. Shaw <dshaw@dshaw.com>
+ * MIT Licensed
+ */
+
+/**
+ * Module dependencies
+ */
+
+var path = __webpack_require__(/*! path */ "./node_modules/path-browserify/index.js")
+
+/**
+ * Exports
+ */
+
+exports = module.exports = createEnv;
+
+/**
+ * Env Manager
+ */
+
+function Env (envfile) {
+  this.envfile = path.join(process.cwd(), envfile || 'env.json')
+  this.evars = (path.existsSync(this.envfile)) ? __webpack_require__("./node_modules/env/lib sync recursive")(this.envfile) : {}
+  this.id = process.env['ENV_ID']
+}
+
+/**
+ * Verify environment variables
+ *
+ * @param fn callback
+ * @api public
+ */
+
+Env.prototype.ok = function (fn) {
+  for (var p in this.evars) {
+    if (!process.env[p]) {
+      var error = new Error(p + ' not defined')
+      console.error(error)
+      fn(error)
+      return false
+    }
+  }
+  return true
+}
+
+/**
+ * Environment variable getter
+ *
+ * @param name
+ * @api public
+ */
+
+Env.prototype.get = function (name) {
+  // get one
+  if (arguments.length === 1) return process.env[name]
+
+  // get all, multi
+  var evars = (arguments.length === 0) ? Object.keys(this.evars) : Array.prototype.slice.call(arguments)
+  return evars.reduce(function (curr, x) {
+    curr[x] = process.env[x]
+    return curr
+  }, {})
+}
+
+/**
+ * Environment variable setter
+ *
+ * @param name
+ * @param value
+ * @api public
+ */
+
+Env.prototype.set = function (name, value) {
+  process.env[name] = value
+}
+
+/**
+ * Delete environment variable(s)
+ *
+ * @param name
+ * @api public
+ */
+
+Env.prototype.del = function (name) {
+  // get one
+  if (arguments.length === 1) {
+    delete process.env[name]
+  }
+
+  // get all, multi
+  var evars = (arguments.length === 0) ? this.evars : Array.prototype.slice.call(arguments)
+  for (var p in evars) {
+    delete process.env[p]
+  }
+}
+
+/**
+ * Instantiate Env
+ */
+
+function createEnv (envfile) {
+  return new Env(envfile)
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/env/package.json":
+/*!***************************************!*\
+  !*** ./node_modules/env/package.json ***!
+  \***************************************/
+/*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, directories, engines, homepage, issues, keywords, main, name, repository, scripts, version, default */
+/***/ (function(module) {
+
+module.exports = {"_from":"env@0.0.2","_id":"env@0.0.2","_inBundle":false,"_integrity":"sha1-UMGfMHsSmkWEW2tobfWzndQNHPA=","_location":"/env","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"env@0.0.2","name":"env","escapedName":"env","rawSpec":"0.0.2","saveSpec":null,"fetchSpec":"0.0.2"},"_requiredBy":["#USER","/"],"_resolved":"https://registry.npmjs.org/env/-/env-0.0.2.tgz","_shasum":"50c19f307b129a45845b6b686df5b39dd40d1cf0","_spec":"env@0.0.2","_where":"D:\\react-projects\\Noted","author":{"name":"Daniel D. Shaw","email":"dshaw@dshaw.com","url":"http://dshaw.com"},"bugs":{"url":"https://github.com/dshaw/env/issues"},"bundleDependencies":false,"deprecated":false,"description":"Environment variable manager","devDependencies":{"tap":"0.0.x"},"directories":{"lib":"lib","test":"test"},"engines":{"node":">= 0.5.9"},"homepage":"https://github.com/dshaw/env#readme","issues":{"url":"https://github.com/dshaw/env/issues"},"keywords":["process","environment","env"],"main":"index","name":"env","repository":{"type":"git","url":"git+https://github.com/dshaw/env.git"},"scripts":{"test":"tap ./test/*.js"},"version":"0.0.2"};
 
 /***/ }),
 
@@ -46253,6 +46442,242 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
+
+/***/ }),
+
+/***/ "./node_modules/path-browserify/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/path-browserify/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+// resolves . and .. elements in a path array with directory names there
+// must be no slashes, empty elements, or device names (c:\) in the array
+// (so also no leading and trailing slashes - it does not distinguish
+// relative and absolute paths)
+function normalizeArray(parts, allowAboveRoot) {
+  // if the path tries to go above the root, `up` ends up > 0
+  var up = 0;
+  for (var i = parts.length - 1; i >= 0; i--) {
+    var last = parts[i];
+    if (last === '.') {
+      parts.splice(i, 1);
+    } else if (last === '..') {
+      parts.splice(i, 1);
+      up++;
+    } else if (up) {
+      parts.splice(i, 1);
+      up--;
+    }
+  }
+
+  // if the path is allowed to go above the root, restore leading ..s
+  if (allowAboveRoot) {
+    for (; up--; up) {
+      parts.unshift('..');
+    }
+  }
+
+  return parts;
+}
+
+// Split a filename into [root, dir, basename, ext], unix version
+// 'root' is just a slash, or nothing.
+var splitPathRe =
+    /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
+var splitPath = function(filename) {
+  return splitPathRe.exec(filename).slice(1);
+};
+
+// path.resolve([from ...], to)
+// posix version
+exports.resolve = function() {
+  var resolvedPath = '',
+      resolvedAbsolute = false;
+
+  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
+    var path = (i >= 0) ? arguments[i] : process.cwd();
+
+    // Skip empty and invalid entries
+    if (typeof path !== 'string') {
+      throw new TypeError('Arguments to path.resolve must be strings');
+    } else if (!path) {
+      continue;
+    }
+
+    resolvedPath = path + '/' + resolvedPath;
+    resolvedAbsolute = path.charAt(0) === '/';
+  }
+
+  // At this point the path should be resolved to a full absolute path, but
+  // handle relative paths to be safe (might happen when process.cwd() fails)
+
+  // Normalize the path
+  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function(p) {
+    return !!p;
+  }), !resolvedAbsolute).join('/');
+
+  return ((resolvedAbsolute ? '/' : '') + resolvedPath) || '.';
+};
+
+// path.normalize(path)
+// posix version
+exports.normalize = function(path) {
+  var isAbsolute = exports.isAbsolute(path),
+      trailingSlash = substr(path, -1) === '/';
+
+  // Normalize the path
+  path = normalizeArray(filter(path.split('/'), function(p) {
+    return !!p;
+  }), !isAbsolute).join('/');
+
+  if (!path && !isAbsolute) {
+    path = '.';
+  }
+  if (path && trailingSlash) {
+    path += '/';
+  }
+
+  return (isAbsolute ? '/' : '') + path;
+};
+
+// posix version
+exports.isAbsolute = function(path) {
+  return path.charAt(0) === '/';
+};
+
+// posix version
+exports.join = function() {
+  var paths = Array.prototype.slice.call(arguments, 0);
+  return exports.normalize(filter(paths, function(p, index) {
+    if (typeof p !== 'string') {
+      throw new TypeError('Arguments to path.join must be strings');
+    }
+    return p;
+  }).join('/'));
+};
+
+
+// path.relative(from, to)
+// posix version
+exports.relative = function(from, to) {
+  from = exports.resolve(from).substr(1);
+  to = exports.resolve(to).substr(1);
+
+  function trim(arr) {
+    var start = 0;
+    for (; start < arr.length; start++) {
+      if (arr[start] !== '') break;
+    }
+
+    var end = arr.length - 1;
+    for (; end >= 0; end--) {
+      if (arr[end] !== '') break;
+    }
+
+    if (start > end) return [];
+    return arr.slice(start, end - start + 1);
+  }
+
+  var fromParts = trim(from.split('/'));
+  var toParts = trim(to.split('/'));
+
+  var length = Math.min(fromParts.length, toParts.length);
+  var samePartsLength = length;
+  for (var i = 0; i < length; i++) {
+    if (fromParts[i] !== toParts[i]) {
+      samePartsLength = i;
+      break;
+    }
+  }
+
+  var outputParts = [];
+  for (var i = samePartsLength; i < fromParts.length; i++) {
+    outputParts.push('..');
+  }
+
+  outputParts = outputParts.concat(toParts.slice(samePartsLength));
+
+  return outputParts.join('/');
+};
+
+exports.sep = '/';
+exports.delimiter = ':';
+
+exports.dirname = function(path) {
+  var result = splitPath(path),
+      root = result[0],
+      dir = result[1];
+
+  if (!root && !dir) {
+    // No dirname whatsoever
+    return '.';
+  }
+
+  if (dir) {
+    // It has a dirname, strip trailing slash
+    dir = dir.substr(0, dir.length - 1);
+  }
+
+  return root + dir;
+};
+
+
+exports.basename = function(path, ext) {
+  var f = splitPath(path)[2];
+  // TODO: make this comparison case-insensitive on windows?
+  if (ext && f.substr(-1 * ext.length) === ext) {
+    f = f.substr(0, f.length - ext.length);
+  }
+  return f;
+};
+
+
+exports.extname = function(path) {
+  return splitPath(path)[3];
+};
+
+function filter (xs, f) {
+    if (xs.filter) return xs.filter(f);
+    var res = [];
+    for (var i = 0; i < xs.length; i++) {
+        if (f(xs[i], i, xs)) res.push(xs[i]);
+    }
+    return res;
+}
+
+// String.prototype.substr - negative index don't work in IE8
+var substr = 'ab'.substr(-1) === 'b'
+    ? function (str, start, len) { return str.substr(start, len) }
+    : function (str, start, len) {
+        if (start < 0) start = str.length + start;
+        return str.substr(start, len);
+    }
+;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -69869,8 +70294,7 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'App' },
-        _react2.default.createElement(_Login2.default, { handleLogin: this.handleLogin }),
-        _react2.default.createElement(_Main2.default, { mainVisibility: this.state.mainVisibility })
+        _react2.default.createElement(_Main2.default, { mainVisibility: { "display": "block" } })
       );
     }
   }]);
@@ -70101,7 +70525,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Main = function (_Component) {
     _inherits(Main, _Component);
 
-<<<<<<< Updated upstream
     function Main() {
         _classCallCheck(this, Main);
 
@@ -70109,70 +70532,6 @@ var Main = function (_Component) {
     }
 
     _createClass(Main, [{
-=======
-    function Main(props) {
-        _classCallCheck(this, Main);
-
-        var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
-
-        _this.state = {
-            visibility: { "display": "none" },
-            data: _this.generateData()
-        };
-        _this.generateData = _this.generateData.bind(_this);
-        return _this;
-    }
-
-    _createClass(Main, [{
-        key: 'generateData',
-        value: function generateData() {
-            return [{
-                "label": "Documents",
-                "data": "Documents Folder",
-                "expandedIcon": "fa fa-fw fa-folder-open",
-                "collapsedIcon": "fa fa-fw fa-folder",
-                "children": [{
-                    "label": "Work",
-                    "data": "Work Folder",
-                    "expandedIcon": "fa fa-fw fa-folder-open",
-                    "collapsedIcon": "fa fa-fw fa-folder",
-                    "children": [{ "label": "Expenses.doc", "icon": "fa fa-fw fa-file-word-o", "data": "Expenses Document" }, { "label": "Resume.doc", "icon": "fa fa-fw fa-file-word-o", "data": "Resume Document" }]
-                }, {
-                    "label": "Home",
-                    "data": "Home Folder",
-                    "expandedIcon": "fa fa-fw fa-folder-open",
-                    "collapsedIcon": "fa fa-fw fa-folder",
-                    "children": [{ "label": "Invoices.txt", "icon": "fa fa-fw fa-file-word-o", "data": "Invoices for this month" }]
-                }]
-            }, {
-                "label": "Pictures",
-                "data": "Pictures Folder",
-                "expandedIcon": "fa fa-fw fa-folder-open",
-                "collapsedIcon": "fa fa-fw fa-folder",
-                "children": [{ "label": "barcelona.jpg", "icon": "fa fa-fw fa-file-image-o", "data": "Barcelona Photo" }, { "label": "logo.jpg", "icon": "fa fa-fw fa-file-image-o", "data": "PrimeFaces Logo" }, { "label": "primeui.png", "icon": "fa fa-fw fa-file-image-o", "data": "PrimeUI Logo" }]
-            }, {
-                "label": "Movies",
-                "data": "Movies Folder",
-                "expandedIcon": "fa fa-fw fa-folder-open",
-                "collapsedIcon": "fa fa-fw fa-folder",
-                "children": [{
-                    "label": "Al Pacino",
-                    "data": "Pacino Movies",
-                    "children": [{ "label": "Scarface", "icon": "fa fa-fw fa-file-video-o", "data": "Scarface Movie" }, { "label": "Serpico", "icon": "fa fa-fw fa-file-video-o", "data": "Serpico Movie" }]
-                }, {
-                    "label": "Robert De Niro",
-                    "data": "De Niro Movies",
-                    "children": [{ "label": "Goodfellas", "icon": "fa fa-fw fa-file-video-o", "data": "Goodfellas Movie" }, { "label": "Untouchables", "icon": "fa fa-fw fa-file-video-o", "data": "Untouchables Movie" }]
-                }]
-            }];
-        }
-    }, {
-        key: 'handleLogin',
-        value: function handleLogin() {
-            console.log('main doing login');
-        }
-    }, {
->>>>>>> Stashed changes
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -70234,6 +70593,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -70247,6 +70608,10 @@ var _inputtext = __webpack_require__(/*! primereact/inputtext */ "./node_modules
 var _button = __webpack_require__(/*! primereact/button */ "./node_modules/primereact/button.js");
 
 __webpack_require__(/*! ./Note.css */ "./src/components/Note/Note.css");
+
+var _TaskTree = __webpack_require__(/*! ../TaskTree/TaskTree */ "./src/components/TaskTree/TaskTree.js");
+
+var _TaskTree2 = _interopRequireDefault(_TaskTree);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -70265,18 +70630,46 @@ var Note = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Note.__proto__ || Object.getPrototypeOf(Note)).call(this, props));
 
         _this.state = {
-            data: _this.generateData(),
+            data: [],
             input: ""
         };
+        _this.handleIncrement = _this.handleIncrement.bind(_this);
         return _this;
     }
 
     _createClass(Note, [{
+        key: 'handleIncrement',
+        value: function handleIncrement() {
+            console.log(this.state.input);
+            var dataTemp = this.state.data;
+            dataTemp.push({
+                "label": this.state.input,
+                "data": "Documents Folder",
+                "icon": "angle-right",
+                /*  "expandedIcon": "fa fa-fw fa-folder-open",
+                 "collapsedIcon": "fa fa-fw fa-folder", */
+                "expandedIcon": "angle-right",
+                "collapsedIcon": "angle-down",
+                "children": [{
+                    "label": "Teste",
+                    "data": "Documents Folder",
+                    /*  "expandedIcon": "fa fa-fw fa-folder-open",
+                        "collapsedIcon": "fa fa-fw fa-folder", */
+                    "expandedIcon": "angle-right",
+                    "collapsedIcon": "angle-down",
+                    "children": []
+                }]
+            });
+            this.setState(_extends({}, this.state, {
+                data: dataTemp
+            }));
+        }
+    }, {
         key: 'generateData',
         value: function generateData() {
             return [{
                 "label": "Documents",
-                "data": "Documents Folder",
+                "data": "TTTTTT",
                 "expandedIcon": "fa fa-fw fa-folder-open",
                 "collapsedIcon": "fa fa-fw fa-folder",
                 "children": [{
@@ -70317,46 +70710,11 @@ var Note = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
 
-            var inputStyle = {
-                "width": "100%",
-                "margin": "8px 0px 8px 0px"
-            };
             return _react2.default.createElement(
                 'div',
                 { className: 'Note' },
-<<<<<<< Updated upstream
-                _react2.default.createElement(
-                    'div',
-                    { className: 'topInput', style: { "display": "inline-flex", "margin": "6px 0px 8px 0px" } },
-                    _react2.default.createElement(_inputtext.InputText, { value: this.state.input,
-                        onChange: function onChange(e) {
-                            return _this2.setState({ value: e.target.value });
-                        },
-                        style: inputStyle
-                    }),
-                    _react2.default.createElement(_button.Button, { icon: 'pi pi-plus', onClick: this.increment })
-                ),
-=======
-                _react2.default.createElement(_inputtext.InputText, { value: this.state.input,
-                    onChange: function onChange(e) {
-                        return _this2.setState({ value: e.target.value });
-                    },
-                    style: inputStyle
-                }),
-                _react2.default.createElement(_button.Button, { icon: 'pi pi-plus', onClick: this.increment }),
->>>>>>> Stashed changes
-                _react2.default.createElement(
-                    'div',
-                    { className: 'Bar' },
-                    _react2.default.createElement(_tree.Tree, { value: this.state.data,
-                        selectionMode: 'checkbox',
-                        selection: this.state.selectedFile,
-                        selectionChange: function selectionChange(e) {
-                            return _this2.setState({ selectedFile: e.selection });
-                        } })
-                )
+                _react2.default.createElement(_TaskTree2.default, null)
             );
         }
     }]);
@@ -70365,6 +70723,103 @@ var Note = function (_Component) {
 }(_react.Component);
 
 exports.default = Note;
+
+/***/ }),
+
+/***/ "./src/components/TaskTree/TaskTree.css":
+/*!**********************************************!*\
+  !*** ./src/components/TaskTree/TaskTree.css ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!./TaskTree.css */ "./node_modules/css-loader/index.js!./src/components/TaskTree/TaskTree.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/TaskTree/TaskTree.js":
+/*!*********************************************!*\
+  !*** ./src/components/TaskTree/TaskTree.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(/*! ./TaskTree.css */ "./src/components/TaskTree/TaskTree.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TaskTree = function (_Component) {
+    _inherits(TaskTree, _Component);
+
+    function TaskTree() {
+        _classCallCheck(this, TaskTree);
+
+        return _possibleConstructorReturn(this, (TaskTree.__proto__ || Object.getPrototypeOf(TaskTree)).apply(this, arguments));
+    }
+
+    _createClass(TaskTree, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'TaskTree' },
+                _react2.default.createElement(
+                    'form',
+                    { className: 'FrmTree' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'TopInput' },
+                        _react2.default.createElement('input', { id: 'itTask', type: 'text' }),
+                        _react2.default.createElement('input', { id: 'btnAdd', type: 'submit' })
+                    )
+                ),
+                _react2.default.createElement('div', { className: 'MainTree' })
+            );
+        }
+    }]);
+
+    return TaskTree;
+}(_react.Component);
+
+exports.default = TaskTree;
 
 /***/ }),
 
@@ -70423,18 +70878,24 @@ var _firebase = __webpack_require__(/*! firebase */ "./node_modules/firebase/dis
 
 var _firebase2 = _interopRequireDefault(_firebase);
 
+var _env = __webpack_require__(/*! env */ "./node_modules/env/index.js");
+
+var _env2 = _interopRequireDefault(_env);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var config = {
-    apiKey: "AIzaSyDqH3GOOJ5rDg4LEW5v18LDYU4JmibCPzQ",
-    authDomain: "noted-39534.firebaseapp.com",
-    databaseURL: "https://noted-39534.firebaseio.com",
-    projectId: "noted-39534",
-    storageBucket: "noted-39534.appspot.com",
-    messagingSenderId: "204244509554"
+console.log("ENV: ", _env2.default);
+
+var conf = {
+    apiKey: _env2.default.get(firebase_apiKey),
+    authDomain: _env2.default.get(firebase_authDomain),
+    databaseURL: _env2.default.get(firebase_databaseURL),
+    projectId: _env2.default.get(firebase_projectId),
+    storageBucket: _env2.default.get(firebase_storageBucket),
+    messagingSenderId: _env2.default.get(firebase_messagingSenderId)
 };
 
-var firebaseApp = exports.firebaseApp = _firebase2.default.initializeApp(config);
+var firebaseApp = exports.firebaseApp = _firebase2.default.initializeApp(conf);
 
 var authentication = exports.authentication = _firebase2.default.auth();
 
